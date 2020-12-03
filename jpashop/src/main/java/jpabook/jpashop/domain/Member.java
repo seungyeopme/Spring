@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
+//@Table(name = "user")
 @Getter @Setter
 public class Member {
 
@@ -22,5 +23,9 @@ public class Member {
 
     @OneToMany(mappedBy = "member")
     private List<Order> orders = new ArrayList<>();
+//    private List<Order> orders;
 
+//    public Member() {
+//        orders = new ArrayList<>();
+//    }
 }
